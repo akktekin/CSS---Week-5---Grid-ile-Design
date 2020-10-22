@@ -1,0 +1,98 @@
+/*Main containerimizi grid yardımıyla 3 sütun 3 satır olarak oluşturdum*/
+.main-container{
+    display: grid;
+    grid-template: 60px 200px 50px / 1fr 400px 1fr;
+    width: 900px;
+    margin: auto;
+    padding: auto;
+    font-weight: bold;
+}
+/*Instagram logosu altındakı ince çizgi*/
+.logo-instagram{
+    border-bottom: 1px solid grey;
+}
+/*Arama boşluğu*/
+.suchen{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    border-bottom: 1px solid grey;
+}
+/*Instagram iconları*/
+.icons-instagram{
+    display: table-column;
+    grid-column: 3 / 4;
+    grid-row: 1 / 4;
+    border-bottom: 1px solid grey;
+    margin-bottom: 250px;
+}
+/*Profil fotosu*/
+.profile-pic{
+    grid-column: 1 / 2;
+    grid-row: 2 / 4;
+}
+/*Ana gövde kısmı*/
+.main-body{
+    overflow: hidden;
+    grid-column: 2 / 3;
+    grid-row: 2 / 4;
+}
+/*Ana gövdeyi 3 satıra bölmüştük / Bu ilk satır*/
+.first-line{
+    display: flex;
+    justify-content: space-around;
+}
+/*2. satır*/
+.second-line{
+    display: flex;
+    justify-content: space-around;
+    font-size: 18px;
+}
+/*3. satır*/
+.third-line{
+    display: flex;
+    flex-direction: column;
+    margin-left: 7%;
+    font-size: 17px;
+}
+/*Ana gövdedeki hicoders yazısı*/
+#hicoders-ch{
+    font-size: 25px;
+}
+/*footer hücresi*/
+footer{
+    grid-column: 1 / 4;
+    grid-row: 5 / 6;
+}
+/*ul lerin arasında eşit boşluk ve başında nokta olmaması*/
+ul{
+    list-style-type: none;
+    justify-content: space-evenly;
+}
+/*sağ üst köşedeki insta iconları*/
+#icons-instagram{
+    display: flex;
+    margin-top: 5px;
+}
+/*footer içindeki yazılar*/
+#bottom-tabs{
+    display: flex;
+    border-top: 1px solid grey;
+    color: grey;
+}
+/*profile bearbeiten butonu*/
+#profile-bearbeiten{
+    border-style: solid;
+    padding: 5px 5px 5px;
+}
+/*Profil fotosu yuvarlaklığı ve çerçeve*/
+#profile-pic{
+    margin: 20px;
+    border-radius: 50%;
+    border: 1px solid gray;
+}
+/*profile bearbeiten botonu*/
+button{
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
